@@ -6,7 +6,7 @@ using namespace std;
 class Node{
     
 public:
-    int noMhs;
+    int noMHS
     Node *next;
 };
 
@@ -17,5 +17,16 @@ class LinkedList{
      public:
      LinkedList(){
         START = NULL ;
+     }
+     void addNode(){
+        int nim ;
+        cout << "\nMasukkan nomer mahasiswa : ";
+        cin >> nim;
+
+        Node *nodeBaru= new Node;
+        nodeBaru->noMHS = nim;
+
+        if (START == NULL || nim <= START ->noMHS){
+        }
      }
 };
