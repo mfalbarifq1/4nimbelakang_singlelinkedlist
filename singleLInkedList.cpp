@@ -10,3 +10,6 @@ public:
     Node *next;
 };
 
+class LinkedList{
+
+};
