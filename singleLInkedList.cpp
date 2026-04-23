@@ -6,7 +6,7 @@ using namespace std;
 class Node{
     
 public:
-    int noMHS
+    int noMHS;
     Node *next;
 };
 
@@ -27,6 +27,11 @@ class LinkedList{
         nodeBaru->noMHS = nim;
 
         if (START == NULL || nim <= START ->noMHS){
+            if (START != NULL && nim == START-> noMHS)
+            {
+                cout << "\nDuplikasi noMHS tidak diijinkan\n";
+                return;
+            }
         }
      }
 };
